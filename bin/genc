@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+# Generate a C project at the specified location.
+
+require 'fileutils'
+require 'pathname'
+
+if ARGV.length < 1
+  puts "Usage: genc [path]"
+  return 1
+end
+
+# Make the directory specified.
+FileUtils::mkdir_p(ARGV[0])
+
+# Get the final directory name to use as the project file name.
+path = Pathname.new(ARGV[0])
+file_name = path.basename
+
+# Generate the Makefile.
+File.open("#{ARGV[0]}/Makefile", 'w') do |file|
+  file.write "CFLAGS=-Wall -Wextra -pedantic -ansi -std=c99 -g"
+  file.write "\n\n"
+  file.write "all: #{file_name}\n\n"
+  file.write "clean:\n"
+  file.write "\trm -f #{file_name}\n"
+  file.write "\trm -rf #{file_name}.dSYM"
+end
+
+# Generate the C source file.
+FileUtils.touch("#{ARGV[0]}/#{file_name}.c")

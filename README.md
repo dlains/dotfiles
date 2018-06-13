@@ -1,6 +1,22 @@
 # dotfiles
 
-This is my personal Shell, Tmux and Vim configuration files. Also included are some files to copy to `~/bin` and other setup resources.
+This is my personal Shell, Tmux and Vim configuration files. Also included are some script files that are added to the path and other setup resources.
+
+## Vim Plugins
+
+I'm using `minpac` as my Vim Plugin manager. In order to get started on a new machine you will need to clone the project into the right directory. For Neovim it is `~/.config/nvim/pack`. Follow thise steps:
+
+```bash
+mkdir -p ~/.config/nvim/pack/minpac/opt
+cd ~/.config/nvim/minpac/opt
+git clone https://github.com/k-takata/minpac.git 
+```
+
+Once that is done start Neovim and tell minpac to update itself. This will install the plugins configured in my dotfiles.
+
+```vim
+:call minpac#update()
+```
 
 ## Git Setup
 
@@ -20,10 +36,15 @@ git config --global alias.ctags '!.git/hooks/ctags'
 
 Thanks to [Tim Pope](https://tpo.pe/) for the [scripts](https://tbaggery.com/2011/08/08/effortless-ctags-with-git.html).
 
+## Scripts
+
+Make sure the scripts in `dotfiles/bin` are executable:
+
+```bash
+chmod +x [script-name]
+```
+
 ## TODO
 
-* Add Neovim init.
-* Add Bash init.
-* Add shell scripts.
 * Write a script to install things.
 

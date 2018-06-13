@@ -1,0 +1,1 @@
+tmux -f ~/Projects/cube/cube_tmux.conf attach

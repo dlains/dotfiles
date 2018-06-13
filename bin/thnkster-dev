@@ -1,0 +1,19 @@
+# Create a new window called thnkster-dev and start the Rails server.
+tmux new-session -s thnkster-dev -n rails -d
+tmux send-keys -t thnkster-dev:0 'cd ~/Projects/thnkster' C-m
+tmux send-keys -t thnkster-dev:0 'rails log:clear' C-m
+tmux send-keys -t thnkster-dev:0 'bundle exec rails s -p 3000' C-m
+
+# Create a new window and start the Mailcatcher server.
+tmux new-window -n mailcatcher -t thnkster-dev
+tmux send-keys -t thnkster-dev:1 'cd ~/Projects/thnkster/' C-m
+tmux send-keys -t thnkster-dev:1 'mailcatcher' C-m
+
+# Create a new window and start the Sidekiq server.
+tmux new-window -n sidekiq -t thnkster-dev
+tmux send-keys -t thnkster-dev:2 'cd ~/Projects/thnkster/' C-m
+tmux send-keys -t thnkster-dev:2 'bundle exec sidekiq' C-m
+
+# Attach to the session
+tmux select-window -t thnkster-dev:0
+tmux attach -t thnkster-dev
