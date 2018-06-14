@@ -44,6 +44,10 @@ Make sure the scripts in `dotfiles/bin` are executable:
 chmod +x [script-name]
 ```
 
+## Resources
+
+Fonts and color schemes that I like to use. Anonymous Pro is my goto font for coding. The Pepermint color scheme works with the default maxOS Terminal. I've switched to iTerm2 now, but just in case I'll keep that color scheme around.
+
 ## TODO
 
 * Write a script to install things.
