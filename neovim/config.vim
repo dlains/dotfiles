@@ -21,3 +21,8 @@ nnoremap <silent> ]B :blast<CR>
 " Also look in the .git directory for a tags file.
 set tags+=.git/tags
 
+" Neovim terminal key mappings.
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+end
