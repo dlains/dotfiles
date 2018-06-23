@@ -32,3 +32,5 @@ let g:airline_theme="one"
 colorscheme one
 set background=dark
 
+" Load the vim-test plugin.
+call minpac#add('janko-m/vim-test')
