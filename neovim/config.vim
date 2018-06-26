@@ -1,6 +1,12 @@
 " Add line numbers by default.
 set number
 
+" Enable moving to another buffer without saving the current buffer.
+set hidden
+
+" Keep more context around cursor when at the bottom of the buffer.
+set scrolloff=5
+
 " Set full color mode.
 set termguicolors
 

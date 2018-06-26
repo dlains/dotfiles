@@ -34,3 +34,6 @@ set background=dark
 
 " Load the vim-test plugin.
 call minpac#add('janko-m/vim-test')
+
+" Add vim-airline plugin.
+call minpac#add('vim-airline/vim-airline')

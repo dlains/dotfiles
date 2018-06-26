@@ -18,6 +18,18 @@ Once that is done start Neovim and tell minpac to update itself. This will insta
 :call minpac#update()
 ```
 
+### Vim Airline
+
+For the best results in viewing the vim-airline status line the powerline fonts need to be installed. Follow these instructions:
+
+```bash
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+```
+
 ## Git Setup
 
 The git_template directory holds a default set of hooks for any new Git repository. It needs to be enabled with:
