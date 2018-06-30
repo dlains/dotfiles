@@ -9,7 +9,7 @@
 "     save the file, restart Neovim and then run :PackUpdate
 "
 "   remove a plugin:
-"     remove the line that defines the plugin, the call#add('user/plugin')
+"     remove the line that defines the plugin, the call minpac#add('user/plugin')
 "     line.
 "
 "     save the file, restart Neovim and then run :PackClean
@@ -37,3 +37,6 @@ call minpac#add('janko-m/vim-test')
 
 " Add vim-airline plugin.
 call minpac#add('vim-airline/vim-airline')
+
+" Add NERDTree plugin.
+call minpac#add('scrooloose/nerdtree')
