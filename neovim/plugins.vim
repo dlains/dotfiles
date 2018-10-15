@@ -40,3 +40,6 @@ call minpac#add('vim-airline/vim-airline')
 
 " Add NERDTree plugin.
 call minpac#add('scrooloose/nerdtree')
+
+" Add Rails.vim
+call minpac#add('tpope/vim-rails')
