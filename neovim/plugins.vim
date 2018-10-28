@@ -43,3 +43,7 @@ call minpac#add('scrooloose/nerdtree')
 
 " Add Rails.vim
 call minpac#add('tpope/vim-rails')
+
+" Add JS and JSX highlighting.
+call minpac#add('pangloss/vim-javascript')
+call minpac#add('mxw/vim-jsx')
