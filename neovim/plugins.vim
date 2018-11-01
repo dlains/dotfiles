@@ -47,3 +47,14 @@ call minpac#add('tpope/vim-rails')
 " Add JS and JSX highlighting.
 call minpac#add('pangloss/vim-javascript')
 call minpac#add('mxw/vim-jsx')
+
+" Add UltiSnips snippet manager.
+call minpac#add('SirVer/ultisnips')
+
+" UltiSnips Configuration
+
+" Editing window should be in a vertical split.
+let g:UltiSnipsEditSplit="vertical"
+
+" Look for global snippet files in this directory.
+let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/neovim/ultisnips']
