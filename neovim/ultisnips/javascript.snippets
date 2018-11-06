@@ -1,9 +1,31 @@
 snippet imp
-import $1 from '$1';
+import $1 from '$2';
 endsnippet
+
+snippet impn
+import { $1 } from '$2';
+endsnippet
+
 snippet impr
 import React from 'react';
 endsnippet
+
 snippet impp
 import PropTypes from 'prop-types';
+endsnippet
+
+snippet rclass
+import React from 'react';
+
+class $1 extends React.Component {
+  render() {
+    return (
+      <div>
+      </div>
+    );
+  }
+}
+
+export default $1;
+$0
 endsnippet
