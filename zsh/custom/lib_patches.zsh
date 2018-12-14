@@ -3,3 +3,6 @@ alias ll='ls -GAFl'
 
 # Work around weird lldb / Python issue.
 alias ldb='PATH=/usr/bin /usr/bin/lldb'
+
+# Use Vi Mode keybindings.
+bindkey -v
