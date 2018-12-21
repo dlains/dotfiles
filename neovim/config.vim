@@ -31,7 +31,7 @@ let mapleader=","
 " Now create the <Leader>F mapping. This will use the :grep ex
 " command to search recursively from the current directory,
 " but skipping excluded directories for the current word.
-nmap <Leader>F :grep -Ri --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:copen<Cr>
+nmap <Leader>F :grep! -Ri --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:copen<Cr>
 
 " Also look in the .git directory for a tags file.
 set tags+=.git/tags
