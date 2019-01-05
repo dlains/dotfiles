@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/dotfiles/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/dotfiles/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -96,3 +96,6 @@ fi
 # Example aliases
 alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Modify GOPATH to projects directory.
+export GOPATH=$HOME/Projects/go
