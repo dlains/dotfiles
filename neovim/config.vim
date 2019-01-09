@@ -28,10 +28,10 @@ nnoremap <silent> ]B :blast<CR>
 " First enable the mapleader and set it to the comma key.
 let mapleader=","
 
-" Now create the <Leader>F mapping. This will use the :grep ex
+" Now create the <Leader>f mapping. This will use the :grep ex
 " command to search recursively from the current directory,
 " but skipping excluded directories for the current word.
-nmap <Leader>F :grep! -Ri --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:copen<Cr>
+nnoremap <silent> <Leader>f :grep! -Rin --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:cw<Cr>
 
 " Also look in the .git directory for a tags file.
 set tags+=.git/tags
