@@ -99,3 +99,8 @@ alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 
 # Modify GOPATH to projects directory.
 export GOPATH=$HOME/Projects/go
+
+# Use most as my PAGER if it is installed.
+if command -v most > /dev/null 2>&1; then
+  export PAGER="most"
+fi
