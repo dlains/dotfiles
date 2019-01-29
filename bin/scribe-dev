@@ -1,1 +1,4 @@
-tmux -f ~/Projects/scribe/scribe_tmux.conf attach
+#!/usr/bin/env bash
+
+project_dir=~/Projects/scribe
+source "$project_dir/scribe_tmux.sh"
