@@ -35,14 +35,14 @@ set background=dark
 " Load the vim-commentary plugin.
 call minpac#add('tpope/vim-commentary')
 
-" Load the vim-test plugin.
-call minpac#add('janko-m/vim-test')
-
 " Add vim-airline plugin.
 call minpac#add('vim-airline/vim-airline')
 
 " Add Rails.vim
 call minpac#add('tpope/vim-rails')
+
+" Add vim-go for better Go language support.
+call minpac#add('fatih/vim-go')
 
 " Add JS and JSX highlighting.
 call minpac#add('pangloss/vim-javascript')
