@@ -1,2 +1,0 @@
-export PROJECT_DIR=$HOME/dotfiles
-tmux -f $PROJECT_DIR/dotfiles_tmux.conf attach
