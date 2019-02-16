@@ -41,13 +41,6 @@ call minpac#add('vim-airline/vim-airline')
 " Add Rails.vim
 call minpac#add('tpope/vim-rails')
 
-" Add vim-go for better Go language support.
-call minpac#add('fatih/vim-go')
-
-" Add JS and JSX highlighting.
-call minpac#add('pangloss/vim-javascript')
-call minpac#add('mxw/vim-jsx')
-
 " Add UltiSnips snippet manager.
 call minpac#add('SirVer/ultisnips')
 
