@@ -33,10 +33,24 @@ let mapleader=","
 " but skipping excluded directories for the current word.
 nnoremap <silent> <Leader>f :grep! -Rin --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:cw<Cr>
 
+" Open config.vim
+nnoremap <silent> <Leader>ec :vsplit ~/dotfiles/neovim/config.vim<Cr>
+" Source config.vim
+nnoremap <silent> <Leader>sc :source ~/dotfiles/neovim/config.vim<Cr>
+" Open plugins.vim
+nnoremap <silent> <Leader>ep :vsplit ~/dotfiles/neovim/plugins.vim<Cr>
+" Source plugins.vim
+nnoremap <silent> <Leader>sp :source ~/dotfiles/neovim/plugins.vim<Cr>
+
+" Lowercase a word while in Insert Mode
+inoremap <silent> <C-u> <Esc>guiwea
+" Uppercase a word while in Insert Mode
+inoremap <silent> <C-U> <Esc>gUiwea
+
 " Make a command to open a reference file in a vertical split pane.
-:command -nargs=1 -bar -complete=file Vref :rightbelow :vsplit <args> | :wincmd h
+:command! -nargs=1 -bar -complete=file Vref :rightbelow :vsplit <args> | :wincmd h
 " Similar command to open a reference file in a horizontal split pane.
-:command -nargs=1 -bar -complete=file Ref :rightbelow :split <args> | :wincmd k
+:command! -nargs=1 -bar -complete=file Ref :rightbelow :split <args> | :wincmd k
 
 " Also look in the .git directory for a tags file.
 set tags+=.git/tags

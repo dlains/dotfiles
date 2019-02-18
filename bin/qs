@@ -26,9 +26,13 @@ if [[ ! -d $1 ]]; then
 fi
 
 NAME=`basename $1`
-cd $1
-tmux new -s $NAME -n editor -d
-tmux send-keys -t $NAME $EDITOR C-m
-tmux new-window -n console -t $NAME
-tmux select-window -t $NAME:1
+
+tmux has-session -t $NAME
+if [ $? != 0 ]; then
+  cd $1
+  tmux new -s $NAME -n editor -d
+  tmux send-keys -t $NAME $EDITOR C-m
+  tmux new-window -n console -t $NAME
+  tmux select-window -t $NAME:1
+fi
 tmux attach -t $NAME
