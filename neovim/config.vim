@@ -28,17 +28,22 @@ nnoremap <silent> ]B :blast<CR>
 " First enable the mapleader and set it to the comma key.
 let mapleader=","
 
+" Temp keystroke replace helper.
+nnoremap <silent> <Leader>k vf;;di<span class="keystroke"><Esc>pa</span><Esc>
+nnoremap <silent> <Leader>m i<span class="keystroke"><Esc>pa</span><Esc>
+nnoremap <silent> <Leader>a i*<Esc>ea*<Esc>
+
 " Now create the <Leader>f mapping. This will use the :grep ex
 " command to search recursively from the current directory,
 " but skipping excluded directories for the current word.
 nnoremap <silent> <Leader>f :grep! -Rin --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:cw<Cr>
 
 " Open config.vim
-nnoremap <silent> <Leader>ec :vsplit ~/dotfiles/neovim/config.vim<Cr>
+nnoremap <silent> <Leader>ec :e ~/dotfiles/neovim/config.vim<Cr>
 " Source config.vim
 nnoremap <silent> <Leader>sc :source ~/dotfiles/neovim/config.vim<Cr>
 " Open plugins.vim
-nnoremap <silent> <Leader>ep :vsplit ~/dotfiles/neovim/plugins.vim<Cr>
+nnoremap <silent> <Leader>ep :e ~/dotfiles/neovim/plugins.vim<Cr>
 " Source plugins.vim
 nnoremap <silent> <Leader>sp :source ~/dotfiles/neovim/plugins.vim<Cr>
 
