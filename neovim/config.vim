@@ -28,11 +28,6 @@ nnoremap <silent> ]B :blast<CR>
 " First enable the mapleader and set it to the comma key.
 let mapleader=","
 
-" Temp keystroke replace helper.
-nnoremap <silent> <Leader>k vf;;di<span class="keystroke"><Esc>pa</span><Esc>
-nnoremap <silent> <Leader>m i<span class="keystroke"><Esc>pa</span><Esc>
-nnoremap <silent> <Leader>a i*<Esc>ea*<Esc>
-
 " Now create the <Leader>f mapping. This will use the :grep ex
 " command to search recursively from the current directory,
 " but skipping excluded directories for the current word.
