@@ -38,10 +38,13 @@ call minpac#add('tpope/vim-commentary')
 " Add vim-airline plugin.
 call minpac#add('vim-airline/vim-airline')
 
-" Add Ruby and Rails pluginx
+" Add Ruby and Rails plugins.
 call minpac#add('vim-ruby/vim-ruby')
 call minpac#add('tpope/vim-rails')
 call minpac#add('danchoi/ri.vim')
+
+" Add Go plugin.
+call minpac#add('fatih/vim-go')
 
 " Add UltiSnips snippet manager.
 call minpac#add('SirVer/ultisnips')
