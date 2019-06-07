@@ -1,1 +1,4 @@
-tmux -f ~/Projects/thnkster/thnkster_tmux.conf attach
+#!/usr/bin/env bash
+
+project_dir=~/Projects/thnkster
+source "$project_dir/thnkster_tmux.sh"
