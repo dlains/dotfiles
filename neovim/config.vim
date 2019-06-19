@@ -31,7 +31,7 @@ let mapleader=","
 " Now create the <Leader>f mapping. This will use the :grep ex
 " command to search recursively from the current directory,
 " but skipping excluded directories for the current word.
-nnoremap <silent> <Leader>f :grep! -Rin --exclude-dir={.git,node_modules,tmp,log} <cword> .<Cr>:cw<Cr>
+nnoremap <silent> <Leader>f :grep! -Rin --exclude-dir={.git,node_modules,tmp,log,coverage} <cword> .<Cr>:cw<Cr>
 
 " Open config.vim
 nnoremap <silent> <Leader>ec :e ~/dotfiles/neovim/config.vim<Cr>
