@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/radd
+source "$project_dir/radd_tmux.sh"
