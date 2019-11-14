@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/inochi
+source "$project_dir/inochi_tmux.sh"

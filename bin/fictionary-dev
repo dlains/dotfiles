@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-project_dir=~/Projects/fictionary
-source "$project_dir/fictionary_tmux.sh"
