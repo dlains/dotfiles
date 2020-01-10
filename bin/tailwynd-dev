@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/tailwynd
+source "$project_dir/tailwynd_tmux.sh"
