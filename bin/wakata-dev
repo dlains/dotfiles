@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-project_dir=~/Projects/wakata
-source "$project_dir/wakata_tmux.sh"
