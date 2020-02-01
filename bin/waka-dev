@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/wakatteiru
+source "$project_dir/wakatteiru_tmux.sh"
