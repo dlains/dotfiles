@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/youcankana
+source "$project_dir/youcankana_tmux.sh"
