@@ -102,8 +102,6 @@ if command -v most > /dev/null 2>&1; then
   export PAGER="most"
 fi
 
-export FONTAWESOME_NPM_AUTH_TOKEN=010BBC48-1D8F-4CD3-B44B-8F3379FF3034
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
