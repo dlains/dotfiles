@@ -42,19 +42,3 @@ call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-ruby/vim-ruby')
 call minpac#add('tpope/vim-rails')
 call minpac#add('danchoi/ri.vim')
-
-" Add Go plugin and configure.
-call minpac#add('fatih/vim-go')
-let g:go_highlight_types = 1
-let g:go_highlight_functions = 1
-
-" Add UltiSnips snippet manager.
-call minpac#add('SirVer/ultisnips')
-
-" UltiSnips Configuration
-
-" Editing window should be in a vertical split.
-let g:UltiSnipsEditSplit="vertical"
-
-" Look for global snippet files in this directory.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/neovim/ultisnips']
