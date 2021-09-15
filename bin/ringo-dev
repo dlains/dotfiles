@@ -1,1 +1,0 @@
-tmux -f ~/Projects/ringo/ringo_tmux.conf attach

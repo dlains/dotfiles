@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/pianowise
+source "$project_dir/pianowise_tmux.sh"

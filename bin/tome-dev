@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/tome
+source "$project_dir/tome_tmux.sh"

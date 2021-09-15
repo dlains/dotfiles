@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:/usr/local/go/bin:$HOME/.dotnet/tools:$PATH
+export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -97,14 +97,8 @@ fi
 alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Modify GOPATH to projects directory.
-export GOPATH=$HOME/go
-
 # Use most as my PAGER if it is installed.
 if command -v most > /dev/null 2>&1; then
   export PAGER="most"
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
