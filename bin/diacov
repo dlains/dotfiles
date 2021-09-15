@@ -1,0 +1,3 @@
+dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+reportgenerator "-reports:./Diamond.Tests/TestResults/coverage.info;./Diamond.Identity.Tests/TestResults/coverage.info" -targetdir:./Diamond.Tests/TestResults/ "-classfilters:-20*.*;-Program.cs;-Startup.cs;-DiamondContextModelSnapshot.cs"
+open Diamond.Tests/TestResults/index.htm
