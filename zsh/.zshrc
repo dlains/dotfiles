@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$HOME/.dotnet/tools:/usr/local/opt/python/libexec/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -101,4 +101,3 @@ alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 if command -v most > /dev/null 2>&1; then
   export PAGER="most"
 fi
-
