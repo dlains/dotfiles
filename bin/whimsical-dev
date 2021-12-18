@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+project_dir=~/Projects/whimsical
+source "$project_dir/whimsical_tmux.sh"
