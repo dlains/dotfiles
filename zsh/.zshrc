@@ -101,3 +101,6 @@ alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 if command -v most > /dev/null 2>&1; then
   export PAGER="most"
 fi
+
+# Override the gcm alias to point to the main branch.
+alias gccm='git checkout main'
