@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$HOME/.dotnet/tools:/usr/local/opt/python/libexec/bin:$PATH
+export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$HOME/.dotnet/tools:/usr/local/opt/python/libexec/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
