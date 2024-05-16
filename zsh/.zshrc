@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='atom'
+  export EDITOR='code --wait'
 fi
 
 # Compilation flags
@@ -103,3 +103,7 @@ fi
 
 # Override the gcm alias to point to the main branch.
 alias gccm='git checkout main'
+
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.1
