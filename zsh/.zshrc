@@ -1,11 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/bin:$HOME/dotfiles/bin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:/usr/local/bin:/usr/local/go/bin:/usr/local/share/dotnet/x64:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
-# Enable shell integration for iTerm2
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -78,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='code --wait'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
