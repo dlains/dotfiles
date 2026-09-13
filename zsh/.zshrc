@@ -93,6 +93,9 @@ fi
 alias zshconfig="nvim ~/dotfiles/zsh/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Make nvim easier to start.
+alias vi=nvim
+
 # Use most as my PAGER if it is installed.
 if command -v most > /dev/null 2>&1; then
   export PAGER="most"
