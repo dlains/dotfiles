@@ -18,7 +18,7 @@ require('nvim-treesitter').install {
 }
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "*"
+    pattern = "*",
     callback = function(args)
         local buf = args.buf
         local ft = vim.bo[buf].filetype
