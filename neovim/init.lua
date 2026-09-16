@@ -9,3 +9,4 @@ require('plugins')
 
 -- Set up plugins with dependencies
 require('treesitter') -- Set up before LSP for better highlighting
+require('lsp')
