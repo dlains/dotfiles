@@ -1,11 +1,7 @@
-require("mason").setup()
-
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format local buffer" })
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-vim.lsp.config("*", { capabilities = capabilities })
+vim.lsp.config('clangd', {
+    cmd = { 'clangd' },
+    filetypes = { 'c', 'h' },
+})
 
 vim.lsp.config("lua_ls", {
     settings = {
@@ -19,3 +15,7 @@ vim.lsp.enable({
     "lua_ls",
     "clangd"
 })
+
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
+
+vim.o.autocomplete = true

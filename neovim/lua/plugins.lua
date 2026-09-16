@@ -26,38 +26,6 @@ require('lazy').setup({
         priority = 100
     },
     {
-        'neovim/nvim-lspconfig',           -- Base LSP configurations
-        dependencies = {
-            'williamboman/mason.nvim',
-            'williamboman/mason-lspconfig.nvim'
-        },
-    },
-    {
-        'hrsh7th/nvim-cmp',
-        dependencies = {
-            'hrsh7th/cmp-nvim-lsp',        -- LSP source for nvim-cmp
-            'hrsh7th/cmp-buffer',          -- Buffer source
-            'hrsh7th/cmp-path',            -- Path source
-            'L3MON4D3/LuaSnip',            -- Snippet engine
-            'saadparwaiz1/cmp_luasnip',    -- Snippet source
-        },
-    },
-    {
-        'nvim-tree/nvim-tree.lua',          -- File explorer
-        dependencies = {
-            'nvim-tree/nvim-web-devicons'
-        }
-    },
-    {
-        'nvim-telescope/telescope.nvim',    -- Fuzzy finder
-        dependencies = {
-            'nvim-lua/plenary.nvim'
-        }
-    },
-    {
-        'folke/which-key.nvim'             -- Key binding helper
-    },
-    {
         'folke/tokyonight.nvim',           -- Theme (load last after all functionality is configured)
         lazy = false,
         priority = 1000,
