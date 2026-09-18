@@ -25,10 +25,17 @@ vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
 -- Plugins
+--   Tokyonight = color scheme
+--   MiniPick = 
+--   Nvim-Lspconfig = Language Server Protocol configuration helper
+--   Nvim-Web-Devicons = Font icons used by LuaLine
+--   Nvim-LuaLine = Improved Neovim status line
 vim.pack.add({
     { src = "https://github.com/folke/tokyonight.nvim.git" },
     { src = "https://github.com/echasnovski/mini.pick" },
-    { src = "https://github.com/neovim/nvim-lspconfig" }
+    { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+    { src = "https://github.com/nvim-lualine/lualine.nvim" }
 })
 
 require('mini.pick').setup()
@@ -57,5 +64,11 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
+
+require("lualine").setup {
+    options = {
+        theme = "tokyonight"
+    }
+}
 
 vim.cmd [[colorscheme tokyonight]]
