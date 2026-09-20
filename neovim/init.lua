@@ -52,7 +52,7 @@ vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
 vim.lsp.config('clangd', {
     cmd = { 'clangd' },
-    filetypes = { 'c', 'h' },
+    filetypes = { 'c' },
 })
 
 vim.lsp.config("lua_ls", {
@@ -63,7 +63,7 @@ vim.lsp.config("lua_ls", {
     },
 })
 
-vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>se', vim.diagnostic.open_float)
 
 require("lualine").setup {
     options = {
