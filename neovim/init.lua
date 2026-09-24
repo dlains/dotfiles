@@ -50,11 +50,6 @@ vim.lsp.enable({
 
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
-vim.lsp.config('clangd', {
-    cmd = { 'clangd' },
-    filetypes = { 'c' },
-})
-
 vim.lsp.config("lua_ls", {
     settings = {
         Lua = {
