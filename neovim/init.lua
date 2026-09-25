@@ -24,7 +24,7 @@ vim.o.incsearch = true      -- Show matches as you type
 -- Visual settings
 vim.o.termguicolors = true  -- Enable 24-bit RGB colors
 vim.o.signcolumn = "yes"    -- Allow space for messages next to numbers
-vim.o.colorcolumn = "100"   -- Show column at 100 characters
+-- vim.o.colorcolumn = "100"   -- Show column at 100 characters
 vim.o.showmatch = true      -- Highlight matching brackets
 vim.o.matchtime = 2         -- How long to show matching bracket
 vim.o.completeopt = "menuone,noinsert,noselect" -- ?
