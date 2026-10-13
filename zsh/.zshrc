@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:/usr/local/bin:/usr/local/go/bin:/usr/local/share/dotnet/x64:$PATH
+export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -101,9 +101,5 @@ if command -v most > /dev/null 2>&1; then
   export PAGER="most"
 fi
 
-# Override the gcm alias to point to the main branch.
-alias gccm='git checkout main'
-
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.3.1
+# Use my ls variant
+alias ll=ls -al
