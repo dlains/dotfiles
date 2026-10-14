@@ -43,15 +43,15 @@
 # resize-overlay-duration = 4s 200ms
 
 shell-integration = "zsh"
-theme = tokyonight
+theme = TokyoNight
 
 font-family = "AnonymicePro Nerd Font Mono"
 
-font-size = 18
-window-width = 165
-window-height = 45
+font-size = 16
+# window-width = 165
+# window-height = 45
 
 background-opacity = 0.9
-background-image = ~/Documents/Wallpaper/stella-chen-yui-artstation-horizontal3.jpg
-background-image-opacity = 0.2
-background-image-fit = cover
+# background-image = ~/Documents/Wallpaper/stella-chen-yui-artstation-horizontal3.jpg
+# background-image-opacity = 0.2
+# background-image-fit = cover

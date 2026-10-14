@@ -40,7 +40,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "kitty"
+local terminal    = "ghostty +new-window"
 local fileManager = "dolphin"
 local menu = "wofi --show drun"
 
