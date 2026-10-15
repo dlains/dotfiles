@@ -41,7 +41,7 @@ fi
 # Use my ls variant
 alias ll="ls -lAh"
 
-# git aliases
+# git aliases and functions
 alias gst="git status"
 alias gaa="git add --all"
 alias gb="git branch"
@@ -53,8 +53,8 @@ alias gcm="git checkout main"
 alias gcmm="git checkout master"
 alias gcmsg="git commit --message"
 alias gf="git fetch"
-alias ggl="git pull origin \"$(current_branch)\""
-alias ggp="git push origin \"$(current_branch)\""
+alias ggl="git pull origin"
+alias ggp="git push origin"
 
 fastfetch
 
