@@ -51,7 +51,4 @@ font-size = 16
 window-width = 165
 window-height = 45
 
-background-opacity = 0.9
-background-image = ~/Wallpaper/z-w-gu-canal.jpg
-background-image-opacity = 0.2
-background-image-fit = cover
+background-opacity = 0.8

@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-project_dir=~/Projects/poe
-source "$project_dir/poe_tmux.sh"

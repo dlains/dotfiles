@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+project_dir=~/Projects/raven
+source "$project_dir/raven_tmux.sh"
