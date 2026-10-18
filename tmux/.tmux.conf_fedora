@@ -31,31 +31,6 @@ bind -r J resize-pane -D 5
 bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 
-# Add truecolor support.
-# set-option -ga terminal-overrides ",xterm-256color:Tc"
-# Turn on 256 color mode in tmux.
-# set -g default-terminal "screen-256color"
-
-# Black and white for the status area.
-# set -g status-style fg=white,bold,bg=black
-
-# Black and white for the command area.
-# set -g message-style fg=white,bg=black,bright
-
-# Status bar window colors.
-# setw -g window-status-style fg=cyan,bg=black
-# setw -g window-status-current-style fg=red,bold,bg=black
-
-# Window page border colors.
-# setw -g pane-border-style fg=green
-# setw -g pane-active-border-style fg=blue
-
-# Increase the size of the left status area.
-# set -g status-left-length 15
-
-# Add the current window index to the left status area.
-# set -g status-left "[#S] #[fg=yellow]#I "
-
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 # set -g @plugin 'tmux-plugins/tmux-sensible'

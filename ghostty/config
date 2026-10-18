@@ -51,7 +51,11 @@ font-size = 18
 window-width = 165
 window-height = 45
 
-background-opacity = 0.9
-background-image = ~/Documents/Wallpaper/stella-chen-yui-artstation-horizontal3.jpg
+background-opacity = 0.8
+background-image = ~/Documents/Wallpaper/z-w-gu-canal.jpg
 background-image-opacity = 0.2
 background-image-fit = cover
+
+mouse-hide-while-typing = true
+window-decoration = true
+
