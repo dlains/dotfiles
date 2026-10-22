@@ -7,13 +7,10 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
         "mpd",
@@ -27,50 +24,45 @@
         "backlight",
         "keyboard-state",
         "sway/language",
-        "battery",
-        "battery#bat2",
         "clock",
         "tray",
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
-    "niri/workspaces": {
-        "format": "{icon} {windows}",
-        "format-window-separator": " ",
-        "window-rewrite-default": "",
-        "window-rewrite": {
-            "app_id<firefox>": "",
-            "app_id<dolphin>": "",
-            "app_id<org.gnome.Nautilus>": "",
-            "app_id<thunar>": "",
-            "app_id<foot>": ""
-        },
+    "hyprland/workspaces": {
+        "format": "{name}: {icon}",
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "active": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
             "default": ""
         }
     },
+    // "niri/workspaces": {
+    //    "format": "{icon} {windows}",
+    //    "format-window-separator": " ",
+    //    "window-rewrite-default": "",
+    //    "window-rewrite": {
+    //        "app_id<firefox>": "",
+    //        "app_id<dolphin>": "",
+    //        "app_id<org.gnome.Nautilus>": "",
+    //        "app_id<thunar>": "",
+    //        "app_id<foot>": ""
+    //    },
+    //    "format-icons": {
+    //        "1": "1",
+    //        "2": "2",
+    //        "3": "3",
+    //        "4": "4",
+    //        "5": "5",
+    //        "active": "",
+    //        "default": ""
+    //    }
+    // },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

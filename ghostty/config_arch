@@ -45,7 +45,7 @@
 shell-integration = "zsh"
 theme = TokyoNight
 
-font-family = "AnonymicePro Nerd Font Mono"
+font-family = AnonyousPro
 
 font-size = 16
 window-width = 165
