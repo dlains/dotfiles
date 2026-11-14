@@ -2,6 +2,8 @@ import Quickshell
 import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
+import Quickshell.Services.Pipewire
+import Quickshell.Hyprland
 
 PanelWindow {
   anchors {
@@ -10,61 +12,58 @@ PanelWindow {
     right: true
   }
 
-  implicitHeight: 50
+  color: "#1a1b26"
+  implicitHeight: 30
   
-  Rectangle {
-    anchors.fill: parent
-    color: "#1a1b26"
+  RowLayout {
+    anchors {
+      left: parent.left
+      verticalCenter: parent.verticalCenter
+      leftMargin: 14
+    }
 
-    
+    spacing: 8
+
+    // Workspaces go here.
+    Repeater {
+      model: Hyprland.workspaces
+      Text { text: modelData.id; color: "#cdd6f4" }
+    }
+  }
+
+  RowLayout {
+    anchors {
+      centerIn: parent
+    }
+
+    spacing: 8
+
+    // Clock goes here
     Text {
-      anchors {
-        left: parent.left
-        verticalCenter: parent.verticalCenter
-        leftMargin: 20
-      }
+      text: Qt.formatDateTime(clock.date, "hh:mm")
+      color: "#94e2d5"
+    }
+  }
 
-      text: "left"
-      color: "#cdd6f4"
+  SystemClock {
+    id: clock
+    precision: SystemClock.Minutes
+  }
+
+  RowLayout {
+    anchors {
+      right: parent.right
+      verticalCenter: parent.verticalCenter
+      rightMargin: 14
     }
 
+    spacing: 16
+
+    // Status goes here
     Text {
-      // Give the text an ID we can refer to elsewhere in the file.
-      id: clock
-
-      anchors.centerIn: parent
-
-      // Create a process management object
-      Process {
-        // The command it will run, every argument is its own string
-        command: ["date"]
-
-        // Run the command immediately
-        running: true
-
-        // Process the stdout stream using a StdioCollector
-        // Use StdioCollector to retrieve the text the process sends
-        // to stdout
-        stdout: StdioCollector {
-          // Listen for the streamFinished signal, which is sent
-          // when the process closes stdout or exits.
-          onStreamFinished: clock.text = this.text // `this` can be omitted
-        }
-      }
+      text: "vol " + Math.round((Pipewire.defaultAudioSink?.audio?.volume ?? 0) * 100) + "%"
+      color: "#e0af68"
     }
-
-    RowLayout {
-      anchors {
-        right: parent.right
-        verticalCenter: parent.verticalCenter
-        rightMargin: 20
-      }
-
-      spacing: 10
-
-      Text { text: "vol"; color: "#fab387" }
-      Text { text: "bat"; color: "#9ece6a" }
-      Text { text: "12:00"; color: "#cdd6f4" }
-    }
+    PwObjectTracker { objects: [Pipewire.defaultAudioSink] }
   }
 }
