@@ -1,9 +1,9 @@
 import Quickshell
 import Quickshell.Io
 import QtQuick
-import QtQuick.Layouts
-import Quickshell.Services.Pipewire
-import Quickshell.Hyprland
+//import QtQuick.Layouts
+//import Quickshell.Services.Pipewire
+//import Quickshell.Hyprland
 
 Scope {
     id: root
@@ -15,7 +15,6 @@ Scope {
         model: Quickshell.screens
 
         delegate: Component {
-
             PanelWindow {
                 required property var modelData
                 screen: modelData
@@ -41,28 +40,20 @@ Scope {
         // Give the process object an id so we can talk
         // about it from the timer.
         id: dateProc
-
         command: ["date"]
         running: true
 
         stdout: StdioCollector {
-            onStreamFinished: clock.text = this.text
+            // Update the property instead of the clock directly.
+            onStreamFinished: root.time = this.text
         }
     }
 
     // Use a timer to run the process at an interval
     Timer {
-        // 1000 miliseconds is one second
         interval: 1000
-
-        // Start the timer immediately
         running: true
-
-        // Run the timer again when it ends
         repeat: true
-
-        // When the timer is triggered, set the running property of the
-        // process to true, which reruns it if stopped.
         onTriggered: dateProc.running = true
     }
 
