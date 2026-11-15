@@ -1,5 +1,6 @@
 // Bar.qml
 import Quickshell
+import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.Pipewire
 import Quickshell.Hyprland
@@ -18,6 +19,7 @@ Scope {
                 right: true
             }
 
+            color: "#16161e"
             implicitHeight: 30
 
             RowLayout {
@@ -34,7 +36,7 @@ Scope {
                     model: Hyprland.workspaces
                     Text {
                         text: modelData.id
-                        color: "#cdd6f4"
+                        color: "#bb9af7"
                     }
                 }
             }
@@ -55,7 +57,7 @@ Scope {
                 // Status goes here
                 Text {
                     text: "vol " + Math.round((Pipewire.defaultAudioSink?.audio?.volume ?? 0) * 100) + "%"
-                    color: "#e0af68"
+                    color: "#ff9e64"
                 }
                 PwObjectTracker {
                     objects: [Pipewire.defaultAudioSink]
