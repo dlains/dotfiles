@@ -54,6 +54,7 @@ Scope {
                     model: Hyprland.workspaces
 
                     Text {
+                        required property var modelData
                         property bool isActive: modelData.focused
 
                         font {
@@ -66,7 +67,7 @@ Scope {
 
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: modelData.activate()
+                            onClicked: parent.modelData.activate()
                         }
                     }
                 }
