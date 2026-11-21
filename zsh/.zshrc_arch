@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/dotfiles/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -58,6 +58,15 @@ DISABLE_AUTO_TITLE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/dotfiles/zsh/custom
+
+# Type a directory to cd
+setopt autocd
+
+# Include dotfiles in glob
+setopt dot_glob
+
+# Extended glob characters: ~ (not), #, ^
+setopt extended_glob
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
