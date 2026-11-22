@@ -14,19 +14,19 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+        // "idle_inhibitor",
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
+        // "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "clock",
-        "tray",
-        "custom/power"
+        // "temperature",
+        // "backlight",
+        // "keyboard-state",
+        // "sway/language",
+        "clock"
+        // "tray",
+        // "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -42,27 +42,6 @@
             "default": ""
         }
     },
-    // "niri/workspaces": {
-    //    "format": "{icon} {windows}",
-    //    "format-window-separator": " ",
-    //    "window-rewrite-default": "",
-    //    "window-rewrite": {
-    //        "app_id<firefox>": "",
-    //        "app_id<dolphin>": "",
-    //        "app_id<org.gnome.Nautilus>": "",
-    //        "app_id<thunar>": "",
-    //        "app_id<foot>": ""
-    //    },
-    //    "format-icons": {
-    //        "1": "1",
-    //        "2": "2",
-    //        "3": "3",
-    //        "4": "4",
-    //        "5": "5",
-    //        "active": "",
-    //        "default": ""
-    //    }
-    // },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -83,7 +62,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",

@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -56,7 +56,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #a9b1d6
 }
 
 #workspaces button:hover {
@@ -64,7 +64,8 @@ button:hover {
 }
 
 #workspaces button.focused, #workspaces button.active {
-    background-color: #64727D;
+    color: #c0caf5;
+    background-color: #565f89;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -95,7 +96,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: #c0caf5;
 }
 
 #window,
@@ -114,7 +115,8 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: #bb9af7;
+    color: #292e42;
 }
 
 #battery {
@@ -161,7 +163,7 @@ button:hover {
 
 #power-profiles-daemon.power-saver {
     background-color: #2ecc71;
-    color: #000000;
+    color: #292e42;
 }
 
 label:focus {
@@ -169,12 +171,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #f7768e;
+    color: #292e42;
 }
 
 #memory {
-    background-color: #9b59b6;
+    color: #292e42;
+    background-color: #70cfff;
 }
 
 #disk {
@@ -186,7 +189,8 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #7aa2f7;
+    color: #292e42;
 }
 
 #network.disconnected {
@@ -194,22 +198,23 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #9ece6a;
+    color: #292e42;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: #9ece6a;
+    color: #292e42;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: #9ece6a;
+    color: #292e42;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+    background-color: #9ece6a;
+    color: #292e42;
 }
 
 #custom-media {
@@ -257,8 +262,8 @@ label:focus {
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+    background-color: #ff9e64;
+    color: #292e42;
 }
 
 #mpd.disconnected {
@@ -266,11 +271,11 @@ label:focus {
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: #f7768e;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+    background-color: #e0af68;
 }
 
 #language {
