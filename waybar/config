@@ -62,9 +62,9 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩",
+        "format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩  ",
         "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format-stopped": "Stopped ",
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
@@ -103,7 +103,9 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },

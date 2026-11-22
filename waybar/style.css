@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Roboto, 'Font Awesome 7 Free', Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -262,16 +262,16 @@ label:focus {
 }
 
 #mpd {
-    background-color: #ff9e64;
+    background-color: #e0af68;
     color: #292e42;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+    background-color: #e0af68;
 }
 
 #mpd.stopped {
-    background-color: #f7768e;
+    background-color: #e0af68;
 }
 
 #mpd.paused {
