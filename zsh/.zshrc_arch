@@ -6,6 +6,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
+# Use bat to colorize man pages.
+export MANPAGER="bat -plman"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
